@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top left, grey 20%, black 60%);
+  background-repeat: no-repeat;
+  height: 1500px;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    width: 385px;
+    font-size: 10px;
+  }
+}
+
+.header {
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: grey;
+}
+@media screen and (max-width: 600px) {
+  .content_two {
+    background-color: rgb(11, 196, 224);
+    flex-direction: column;
+    font-size: 20px;
+    width: 395px;
+  }
+}
+.content_two {
+  display: flex;
+}
+
+.content_text {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .media_handles {
+    flex-direction: column;
+    text-align: left;
+    margin-left: -250px;
+    font-size: 20px;
+  }
+}
+
+.media_handles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.media_handles a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.trans:hover {
+  width: 2300px;
+  height: 750px;
+  transform: rotate(360deg);
+}
+.drop p {
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+}
+.trans {
+  width: 200px;
+  height: 200px;
+  background-image: url(Screenshot_20230220-152533.png);
+  background-repeat: no-repeat;
+  transition: width 2s, height 2s, transform 2s;
+}
+.dropbtn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(66, 0, 128);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+.dropdown-content {
+  display: flex;
+  width: 1000px;
+  height: 100px;
+  text-align: center;
+  margin-top: 50px;
+  background-image: linear-gradient(to top left, blue 20%, black 60%);
+  color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown-content {
+    margin-left: 10px;
+    color: #fff;
+    background: none;
+    width: 85px;
+    padding: 10px;
+  }
+}
+
+.dropdown-content a:hover {
+  background-color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 600px) {
+  .dropdown {
+    margin-left: -10px;
+    font-size: 20px;
+    width: 385px;
+  }
+  .dropbtn {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lower_content {
+    font-size: 20px;
+    width: 385px;
+    margin-top: 50px;
+  }
+}
+
+.lower_content {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
+}
