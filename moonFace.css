@@ -11,6 +11,9 @@ body {
     width: 385px;
     font-size: 10px;
   }
+  body {
+    width: 385px;
+  }
 }
 
 .header {
@@ -91,6 +94,12 @@ body {
   justify-content: center;
 }
 @media screen and (max-width: 600px) {
+  .roadmap_content {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 385px;
+  }
 }
 
 @media screen and (max-width: 600px) {
